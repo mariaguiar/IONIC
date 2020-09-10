@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Geolocation
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div>
+    <ion-button type="button" (click)= "obtenerLocalizacionPromesa()">Promesa</ion-button>
+    <hr>
+  <div *ngIf= "latitudPromesa!=0 && longitudPromesa!=0 ">
+     
+      <div  >
+          Latitud: {{latitudPromesa}} <br>
+          Longitud: {{longitudPromesa}} <br>
+          
+      </div>
+    </div>
+  <hr>
+    <ion-button type="button" (click)= "obtenerLocalizacionObservable()">Observable</ion-button>
+    <div *ngIf= "latitudObservable!=0 && longitudObservable!=0 ">
+     
+      <div  >
+          Latitud: {{latitudObservable}} <br>
+          Longitud: {{longitudObservable}} <br>
+          
+      </div>
+    </div>
+  </div>
+</ion-content>

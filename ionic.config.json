@@ -1,0 +1,7 @@
+{
+  "name": "librerias",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
